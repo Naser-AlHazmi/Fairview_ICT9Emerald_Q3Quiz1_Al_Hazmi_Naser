@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Fairview_ICT9Emerald_Q3Quiz1_Al_Hazmi_Naser</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+
+		body {
+
+			background-image: url(https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg);  background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
+
+		}
+
+		.bck {
+
+			background-color:  rgba(255, 255, 255, 0.7);  padding: 20px; border-radius: 20px; width: 800px; margin-top: 80px; margin-bottom: 80px; 
+
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<center>
+
+		<div class="bck">
+			
+			<h1>JavaScript Operators!</h1>
+
+			<br><br>
+
+			<label for="userInputField">Enter the first value: </label>
+
+		  	<input type="number" id="userInputField1" class="form-control">
+
+		  	<script>
+		    function getUserInput() {
+		      let userInput1 = document.getElementById('userInputField1').value; 
+		    }
+
+		  	</script>
+
+			<label for="userInputField">Enter the second value: </label>
+
+		  	<input type="number" id="userInputField2" class="form-control">
+
+		  	<script>
+		    function getUserInput() {
+		      let userInput2 = document.getElementById('userInputField2').value; 
+		    }
+
+		  	</script>
+
+		  	<br><br>
+
+		  	<div class="row">
+
+		  		<center>
+
+		  			<h3>Arithmatic operators</h3>
+
+		  			<br><br>
+
+			  		<div class="col-md-4">
+
+			  			<button type="button" class="btn btn-outline-dark" onclick="var userInput1 = document.getElementById('userInputField1').value; var userInput2 = document.getElementById('userInputField2').value; var c=userInput1*userInput2; document.getElementById('show1').innerHTML = userInput1 + ' multiplied to ' + userInput2 + ' is ' +  c">Multiplication</button>
+
+			  	
+
+			  			<button type="button" class="btn btn-outline-dark" onclick="var userInput1 = document.getElementById('userInputField1').value; var userInput2 = document.getElementById('userInputField2').value; var c=userInput1**userInput2; document.getElementById('show1').innerHTML = userInput1 + ' to the power of ' + userInput2 + ' is ' + c">Exponent</button>
+
+			  		</div>
+
+		  		</center>
+
+		  	</div>
+
+		  	<br><br>
+
+		  	<p id="show1">Result</p>
+
+		  	<br><br><br><br>
+
+		  	<div class="row">
+
+		  		<center>
+
+		  			<h3>Comparison Operators</h3>
+
+		  			<br><br>
+
+			  		<div class="col-md-4">
+
+			  			<button type="button" class="btn btn-outline-dark" onclick="var userInput1 = document.getElementById('userInputField1').value; var userInput2 = document.getElementById('userInputField2').value; var c=userInput1==userInput2; document.getElementById('show2').innerHTML = 'Is ' + userInput1 + ' equal to ' + userInput2 + '? ' +  c">Are they Equal?</button>
+
+			  	
+
+			  			<button type="button" class="btn btn-outline-dark" onclick="var userInput1 = document.getElementById('userInputField1').value; var userInput2 = document.getElementById('userInputField2').value; var c=userInput1>userInput2; document.getElementById('show2').innerHTML = 'Is ' + userInput1 + ' greater than ' + userInput2 + '? ' + c">Is one greater than the other?</button>
+
+			  		</div>
+
+		  		</center>
+
+		  	</div>
+
+		  	<br><br>
+
+		  	<p id="show2">Result</p>
+
+		  	<br><br><br><br>
+
+		  	<div class="row">
+
+		  		<center>
+
+		  			<h3>Logic Operators</h3>
+
+		  			<br><br>
+
+			  		<div class="col-md-4">
+
+			  			<button type="button" class="btn btn-outline-dark" onclick="var userInput1 = document.getElementById('userInputField1').value; var userInput2 = document.getElementById('userInputField2').value; var c=userInput1>=userInput2; var d=userInput1!=userInput2; e=c&&d; document.getElementById('show3').innerHTML = 'If ' + userInput1 + ' is greater than ' + userInput2 + ' ,and they are not equal, then it shall display  ' +  e">AND operation</button>
+
+			  	
+
+			  			<button type="button" class="btn btn-outline-dark" onclick="var userInput1 = document.getElementById('userInputField1').value; var userInput2 = document.getElementById('userInputField2').value; var c=userInput1>=userInput2; var d=userInput1=userInput2; e=c||d; document.getElementById('show3').innerHTML = 'If only one of either ' + userInput1 + ' is greater than ' + userInput2 + ' ,or they are equal, then it shall display  ' +  e">OR Operation</button>
+
+			  		</div>
+
+		  		</center>
+
+		  	</div>
+
+		  	<br><br>
+
+		  	<p id="show3">Result</p>
+
+		</div>
+
+  	</center>
+
+</body>
+
+</html>
